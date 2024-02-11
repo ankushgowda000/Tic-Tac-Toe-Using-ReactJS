@@ -1,0 +1,39 @@
+.tic-tac-toe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 100px; */
+    border-radius: 20px;
+    background-color: #00D2FF;
+    width: 335px;
+    height: 100vh;
+    margin-left: 34vw;
+  }
+  
+  .square {
+    border: 1px solid red;
+    float: left;
+    font-size: 40px;
+    height: 100px;
+    padding: 0px;
+    text-align: center;
+    width: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 3px;
+  }
+
+  .restartButton{
+    width: 300px;
+    height: 54px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      margin-right: 5px;
+    }
+  }
