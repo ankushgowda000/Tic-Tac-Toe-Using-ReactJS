@@ -3,7 +3,7 @@ import { TicTacToe } from './components';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:"red"}}>
       <TicTacToe />
     </div>
   );
