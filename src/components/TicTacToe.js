@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./TicTacToe.css";
+import "../styles/TicTacToe.css";
 import TicTacToeX from "../images/TicTacX.png"
 import TicTacToeO from "../images/TicTacO.png"
 import TicTacToeRestart from "../images/TicTacRestart.png"
