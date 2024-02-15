@@ -1,12 +1,10 @@
 import './App.css';
-// import LightDarkMode from './components/LightDarkMode';
-import TicTacToe from './components/TicTacToe';
+import { TicTacToe } from './components';
 
 function App() {
   return (
     <div className="App">
       <TicTacToe />
-      {/* <LightDarkMode /> */}
     </div>
   );
 }

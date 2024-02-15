@@ -12,12 +12,12 @@ const Square = ({ value, onClick }) => {
   );
 }
 
-export default function TicTacToe() {
+const TicTacToe = () => {
   const [squares, setSquares] = useState(Array(9).fill(""));
   const [isXTurn, setIsXTurn] = useState(true);
   const [status, setStatus] = useState("");
 
-  function getWinner(squares) {
+  const getWinner = (squares) => {
     const winningPatterns = [
       [0, 1, 2],
       [3, 4, 5],
@@ -44,7 +44,7 @@ export default function TicTacToe() {
     return null;
   }
 
-  function handleClick(getCurrentSquare) {
+  const handleClick = (getCurrentSquare) => {
     let cpySquares = [...squares];
     if (getWinner(cpySquares) || cpySquares[getCurrentSquare]) return;
     cpySquares[getCurrentSquare] = isXTurn ? TicTacToeX : TicTacToeO;
@@ -52,7 +52,7 @@ export default function TicTacToe() {
     setSquares(cpySquares);
   }
 
-  function handleRestart() {
+  const handleRestart = () => {
     setIsXTurn(true);
     setSquares(Array(9).fill(""));
   }
@@ -89,3 +89,5 @@ export default function TicTacToe() {
     </div>
   );
 }
+
+export { TicTacToe }
